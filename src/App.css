@@ -1,0 +1,50 @@
+
+*{
+  font-family: sans-serif, serif;
+}
+main{
+  margin-top: 5rem;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo{
+  cursor: pointer;
+}
+img,
+button,
+a{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  footer{
+    position: relative;
+    top: 7rem;
+    width: 100%;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 5rem;
+    flex-shrink: 0;
+  }
+  .interest,
+  .alert{
+    display: block !important;
+  }
+  .outer{
+    display: flex;
+    column-gap: 2rem;
+    flex-shrink: 0;
+  }
+  .inner:hover{
+    transform: scale(1.1);
+  }
+  .inner{
+    width: 50%;
+  }
+}
